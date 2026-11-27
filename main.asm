@@ -31,14 +31,14 @@ verificarVitoria:
             lbu $t5, 3($t4)
             bne $t5, $a0, incremento_horizontal_j
 
-            j return_vitorias
+            j return_vitoria
 
             incremento_horizontal_j:
                 addi $t1, $t1, 1 # j++
                 j for_horizontal_j
 
             fim_for_horizontal_j:
-            addi $t0, t0, 1 # i++
+            addi $t0, $t0, 1 # i++
             j for_horizontal_i
 
     fim_for_horizontal_i:
