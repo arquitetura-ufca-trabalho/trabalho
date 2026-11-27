@@ -43,3 +43,12 @@ verificarVitoria:
 
     fim_for_horizontal_i:
 
+    # return 0
+    li $v0, 0
+    jr $ra
+
+    #return 1
+    return_vitoria:
+        li $v0, 1
+        jr $ra
+
